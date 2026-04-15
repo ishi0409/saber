@@ -1,3 +1,3 @@
 # 使用技術一覧  
 
-https://img.shields.io/badge/{streamlit}-{#FF4B4B}-{white}.svg?logo={streamlit}
+<img src="https://img.shields.io/badge/-Python-F9DC3E.svg?logo=python&style=flat">
