@@ -9,7 +9,7 @@ uploadfile = st.file_uploader("ファイルを選択してください", type="c
 
 if uploadfile is not None:
     file = {'file': (uploadfile.name, uploadfile.getvalue(), "text/csv")}
-    r = requests.post("http://127.0.0.1:8000/uploadfile", files=file)
+    r = requests.post("https://saber-ck8u.onrender.com", files=file)
     if r.status_code == 200:
         st.success("ファイルの読み込みに成功")
         data = r.json()
