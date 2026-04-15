@@ -14,5 +14,6 @@ if uploadfile is not None:
         st.success("ファイルの読み込みに成功")
         data = r.json()
         df_res = pd.DataFrame(data)
+        st.dataframe(df_res)
     else:
         st.error("ファイルの読み込みに失敗")
