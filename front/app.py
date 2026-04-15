@@ -6,6 +6,13 @@ import os
 st.title("RC計算機能")
 st.write("csvファイル形式でアップロードされた野球の打者成績に関してRCを計算してその結果を返します")
 
+with st.expander("はじめに：データの準備方法"):
+    st.write("""
+    1. [プロEYE球](https://proeyekyuu.com/ja/home-jp/) 様のサイトへアクセスします。
+    2. 対象のデータ(年別のCSV→選手打撃成)をダウンロードしてください。
+    3. 下のアップロード欄にそのファイルをアップロードしてください。
+    """)
+
 uploadfile = st.file_uploader("ファイルを選択してください", type="csv")
 API_URL = os.getenv("API_URL")
 
