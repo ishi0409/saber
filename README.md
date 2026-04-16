@@ -31,7 +31,7 @@ graph LR
     User[ユーザー] -->|csvアップロード| ST(Streamlit / Render)
     ST --> |POSTリクエスト| FA(FastAPI / Redner)
     FA -- "計算(RC.py)" --> FA
-    FA -->|JSONフォーマット| ST
+    FA -->|計算結果| ST
     ST-->|結果の表示| User
 ```
 
